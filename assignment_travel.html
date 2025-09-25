@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer - Discover Your Next Adventure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a73e8, #6c5ce7);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #2d3436;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #74b9ff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: #1a73e8;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .text-formatting {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid #1a73e8;
+            margin: 1.5rem 0;
+        }
+        
+        .image-gallery {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .image-gallery img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .image-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .image-caption {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        th {
+            background-color: #1a73e8;
+            color: white;
+        }
+        
+        tr:hover {
+            background-color: #f1f8ff;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        dt {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        dd {
+            margin-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .links-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+        
+        .link-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin: 0.5rem;
+        }
+        
+        .link-button:hover {
+            background-color: #0d62c9;
+        }
+        
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .image-gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Travel Explorer</h1>
+        <p>Discover Amazing Destinations Around the World</p>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Travel Packages</a></li>
+            <li><a href="#essentials">Travel Essentials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Welcome Section -->
+        <section id="home">
+            <h2>Welcome to Travel Explorer</h2>
+            <p>Your journey to incredible destinations starts here. We help you plan the perfect getaway, whether you're looking for adventure, relaxation, or cultural experiences.</p>
+            
+            <!-- Text Formatting Examples -->
+            <div class="text-formatting">
+                <p>At Travel Explorer, we believe that <b>every journey should be memorable</b>. Our team works tirelessly to ensure you have the <i>best travel experience possible</i>.</p>
+                <p>We offer <u>exclusive deals</u> and personalized itineraries that you won't find anywhere else. Don't settle for <s>ordinary vacations</s> when you can have extraordinary adventures with us!</p>
+            </div>
+            
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beautiful mountain landscape" width="100%">
+                    <div class="image-caption">Swiss Alps - A breathtaking mountain destination</div>
+                </div>
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tropical beach with palm trees" width="100%">
+                    <div class="image-caption">Beach Relaxation - The perfect tropical getaway</div>
+                </div>
+            </div>
+            
+            <!-- Links Section -->
+            <div class="links-section">
+                <a href="#contact" class="link-button">Contact Us</a>
+                <a href="https://www.lonelyplanet.com" target="_blank" class="link-button">External Travel Resource</a>
+                <a href="#home" class="link-button">Back to Top</a>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <h2>Top 5 Travel Destinations</h2>
+            <ol>
+                <li><b>Bali, Indonesia</b> - The Island of Gods with beautiful beaches and rich culture</li>
+                <li><b>Paris, France</b> - The City of Light, famous for its art, fashion, and cuisine</li>
+                <li><b>Kyoto, Japan</b> - Ancient temples, traditional gardens, and cherry blossoms</li>
+                <li><b>Santorini, Greece</b> - Stunning white-washed buildings with blue domes overlooking the sea</li>
+                <li><b>New York City, USA</b> - The bustling metropolis that never sleeps</li>
+            </ol>
+        </section>
+        
+        <hr>
+        
+        <!-- Travel Packages Table -->
+        <section id="packages">
+            <h2>Travel Packages</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Price</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bali, Indonesia</td>
+                        <td>$1,200</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td>Paris, France</td>
+                        <td>$1,500</td>
+                        <td>5 days</td>
+                    </tr>
+                    <tr>
+                        <td>Kyoto, Japan</td>
+                        <td>$2,000</td>
+                        <td>10 days</td>
+                    </tr>
+                    <tr>
+                        <td>Santorini, Greece</td>
+                        <td>$1,800</td>
+                        <td>6 days</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <hr>
+        
+        <!-- Travel Essentials Section -->
+        <section id="essentials">
+            <h2>Travel Essentials to Pack</h2>
+            <ul>
+                <li>Passport and travel documents</li>
+                <li>Universal power adapter</li>
+                <li>Portable charger</li>
+                <li>First-aid kit</li>
+                <li>Reusable water bottle</li>
+                <li>Comfortable walking shoes</li>
+                <li>Weather-appropriate clothing</li>
+                <li>Travel pillow and eye mask</li>
+            </ul>
+            
+            <h2>Travel Terminology</h2>
+            <dl>
+                <dt>Itinerary</dt>
+                <dd>A planned route or journey, typically including a list of places to visit and activities to do.</dd>
+                
+                <dt>Visa</dt>
+                <dd>An official document or stamp in a passport that allows the holder to enter, leave, or stay in a country for a specified period.</dd>
+                
+                <dt>Jet Lag</dt>
+                <dd>A temporary sleep disorder that occurs when a person travels quickly across multiple time zones.</dd>
+            </dl>
+        </section>
+        
+        <hr>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to plan your next adventure? Get in touch with our travel experts today!</p>
+            <p>Email: info@travelexplorer.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Travel Street, Adventure City, AC 12345</p>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+        <p>Designed with ❤️ for travel enthusiasts around the world</p>
+    </footer>
+</body>
+</html>
