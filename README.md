@@ -92,10 +92,9 @@ Contact information including:
 ```
 travel-website/
 │
-├── index.html
+├── assignment.html
 ├── mountains.jpg
 ├── beach.jpg
-└── README.md
 ```
 
 ## 🎯 Key Requirements Met
